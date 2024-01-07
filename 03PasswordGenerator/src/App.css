@@ -1,0 +1,13 @@
+.container{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  align-items: center;
+
+  border:1px solid black;
+  width:40%;
+  padding:5rem;
+  margin:auto;
+  color:white;
+  background-color: rgb(44, 43, 43);
+}

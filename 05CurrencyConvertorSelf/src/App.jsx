@@ -32,7 +32,7 @@ function App() {
     <div className='flex flex-col items-center w-1/2  m-auto bg-white p-8 rounded-md border pt-8'>
       <h1 className="text-3xl text-black mb-4">Currency Convertor</h1>
       <InputBox
-        label="From"
+        label={from}
         options={currencyOption?currencyOption:["usd"]}
         amount={amount}
         onAmountChange={(val)=>{setAmount(val)}}
@@ -41,7 +41,7 @@ function App() {
       />
 
       <InputBox
-        label="To"
+        label={to}
         options={currencyOption}
         amount={targetAmount}
         onCurrencyChange={(cur)=>{setTargetCurrency(cur)}}
